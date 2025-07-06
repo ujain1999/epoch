@@ -22,6 +22,19 @@ To learn more about how dynamic wallpapers work on MacOS, go to the [FAQ](https:
 ## 🧰 Installation
 ### 🖥️ Pre-built
 You can download a pre-built app from the [Releases](https://github.com/your-username/epoch/releases).
+
+**macOS Gatekeeper Warning**
+
+Because **Epoch** is an open–source app and is not signed or notarized, macOS will display a warning when you try to open it.
+This is expected and does **not** mean the app is unsafe.
+You can bypass this restriction in one of the following ways:
+
+1. Use Right–Click → Open
+2. Remove macOS quarantine flag 
+```bash
+xattr -dr com.apple.quarantine /Applications/Epoch.app
+```
+
 ### 🛠️ Build from source
 Clone the repo:
 
